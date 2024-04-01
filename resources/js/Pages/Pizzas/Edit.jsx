@@ -1,6 +1,6 @@
 import AuthenticatedLayout from '@/Layouts/AuthenticatedLayout';
 import { Head } from '@inertiajs/react';
-import UpdatePizzaOrderForm from "@/Pages/Profile/Partials/UpdatePizzaOrderForm.jsx";
+import UpdatePizzaOrderForm from "@/Pages/Pizzas/Partials/UpdatePizzaOrderForm.jsx";
 
 export default function Edit({ auth, pizza }) {
     return (

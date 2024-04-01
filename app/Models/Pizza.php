@@ -20,6 +20,7 @@ class Pizza extends Model
 //   gets user attribute
     protected $appends = [
         'chef',
+        'last_updated',
     ];
 
 //    hides user objects, only reuturn name
@@ -34,5 +35,9 @@ class Pizza extends Model
     public function getChefAttribute(): string
     {
         return $this->user->name;
+    }
+    public function getLastUpdatedAttribute(): string
+    {
+        return $this->updated_at->diffForHumans();
     }
 }
